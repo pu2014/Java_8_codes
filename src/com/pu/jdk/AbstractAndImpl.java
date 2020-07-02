@@ -8,7 +8,7 @@ package com.pu.jdk;
  *      interface: public static final
  *  method:
  *      abstract: private ..non abstract
- *      interface: public abstract
+ *      interface: public abstract  static default
  * @CREATE BY @Author pbj on @Date 2020/5/11 10:25
  */
 public class AbstractAndImpl extends myAbs implements MyImpl{
@@ -19,12 +19,10 @@ public class AbstractAndImpl extends myAbs implements MyImpl{
 
             }
         };  //抽象类不能被直接实现 即new
-        MyImpl mi = new MyImpl() {
-            @Override
-            public void incre() {
-                System.out.println();
-            }
-        }; //也不能直接new
+        AbstractAndImpl proc = new AbstractAndImpl();
+        proc.incre();
+        MyImpl.print();
+
     }
 
 
@@ -59,5 +57,8 @@ interface MyImpl {
 
     default void incre(){
         System.out.println(id + "  " + name);
+    }
+    static void print(){
+        System.out.println(id + " ..." + name);
     }
 }

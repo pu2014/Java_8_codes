@@ -1,5 +1,6 @@
 package com.pu.concurrent;
 
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.UUID;
 
@@ -17,6 +18,10 @@ import java.util.UUID;
  *          }
  *          notifyAll() -- jvm
  *      }
+ *
+ *      java.util.Hashtable
+ *      concurentHashMap
+ *      Collections.synchronizedMap()
  *
  */
 public class WhyHashMapCannotConcurrent {
