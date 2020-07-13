@@ -3,6 +3,7 @@ package com.pu.thread;
 import java.util.concurrent.CountDownLatch;
 
 /**
+ * 闭锁（close lock）
  * CountDownLatch llow one or more threads to wait for other threads to complete operationsa
  *      like join() but is more stronger;
  */
