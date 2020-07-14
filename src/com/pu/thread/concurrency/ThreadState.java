@@ -18,6 +18,7 @@ public class ThreadState {
             Thread.sleep(100);
         } catch (InterruptedException e) {
             //恢复中断状态
+            //不处理此异常，继续执行任务：捕捉到异常之后恢复中断标记（交由后续程序检查中断）。
             Thread.currentThread().interrupt();
         }
 
