@@ -20,7 +20,7 @@ public class ThreadPoolExecutorTest {
 
 
     }
-    static class Task implements Runnable{
+    static class Task implements Runnable {
 
         @Override
         public void run() {
