@@ -9,5 +9,5 @@ package com.pu.thread.concurrent_vector;
  *         2. 监听机制
  * @CREATE BY @Author pbj on @Date 2020/7/13 17:32
  */
-public class PuCopyOnWriteArrayList {
+public class CopyOnWriteArrayListTest {
 }

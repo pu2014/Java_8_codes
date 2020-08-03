@@ -16,7 +16,7 @@ import java.util.ConcurrentModificationException;
  *      ConcurrentHashMap
  * @CREATE BY @Author pbj on @Date 2020/7/13 16:12
  */
-public class PuConcurrentHashMap {
+public class ConcurrentHashMapTest {
     /**
      * jdk1.7： （数组链表）分段锁 （reetrantLock) segment数组  segment 继承 ReetrantLock  put时 先自旋获得锁，获取失败就阻塞获得锁
      *          get过程不加锁， 利用volatile 实现，保证内存的可见性，所以每次获取时都是最新的值
